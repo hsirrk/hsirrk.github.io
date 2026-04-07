@@ -2,24 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Utkarsh Gautam Kumar | Electrical Engineering Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Utkarsh Gautam Kumar, Electrical Engineering student specializing in embedded systems, digital design, and power system engineering."
-    />
+    <meta name="description" content="Portfolio of Utkarsh Gautam Kumar, Electrical Engineering student specializing in embedded systems, digital design, and power system engineering." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
+    <!-- Parallax background layer -->
+    <div class="parallax-bg" id="parallaxBg"></div>
+
     <nav class="site-nav">
       <div class="nav container">
         <a class="brand" href="#top">Utkarsh</a>
@@ -35,29 +30,17 @@
     </nav>
 
     <header class="hero" id="top">
-
       <div class="hero-content container">
         <div class="hero-layout">
           <figure class="profile-photo-wrap">
-            <img
-              class="profile-photo"
-              src="Utkarsh.jpeg"
-              alt="Portrait of Utkarsh Gautam Kumar"
-              width="800"
-              height="800"
-              decoding="async"
-              fetchpriority="high"
-            />
+            <img class="profile-photo" src="Utkarsh.jpeg" alt="Portrait of Utkarsh Gautam Kumar" width="800" height="800" decoding="async" fetchpriority="high" />
           </figure>
-
           <div class="hero-copy">
             <p class="eyebrow">Electrical Engineering Portfolio</p>
             <h1>Utkarsh Gautam Kumar</h1>
             <p class="subtitle">
-              I design and validate engineering systems at the intersection of
-              embedded firmware, digital hardware, and electrical power analysis.
+              I design and validate engineering systems at the intersection of embedded firmware, digital hardware, and electrical power analysis.
             </p>
-
             <div class="hero-contacts">
               <a href="mailto:utkarshkrish11@gmail.com">utkarshkrish11@gmail.com</a>
               <a href="https://www.linkedin.com/in/u-gautam-kumar/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -72,18 +55,10 @@
       <section id="about" class="section container">
         <h2>About Me</h2>
         <p>
-          I am an Electrical Engineering (Co-op) student at the University of
-          British Columbia, where I focus on solving practical engineering
-          problems through a full-stack hardware workflow: architecture,
-          implementation, testing, and technical validation. I am most engaged
-          when a project requires both systems thinking and detailed execution.
+          I am an Electrical Engineering (Co-op) student at the University of British Columbia, where I focus on solving practical engineering problems through a full-stack hardware workflow: architecture, implementation, testing, and technical validation. I am most engaged when a project requires both systems thinking and detailed execution.
         </p>
         <p>
-          My technical interests are embedded systems, digital processor design,
-          and electrical power systems. Across academic, research, and industry
-          work, I have built firmware-driven control platforms, hardware
-          acceleration pipelines, power simulations, and verification tools that
-          improve reliability, performance, and engineering decision quality.
+          My technical interests are embedded systems, digital processor design, and electrical power systems. Across academic, research, and industry work, I have built firmware-driven control platforms, hardware acceleration pipelines, power simulations, and verification tools that improve reliability, performance, and engineering decision quality.
         </p>
       </section>
 
@@ -168,53 +143,40 @@
           <div class="project-grid">
             <div>
               <h4>Problem / Goal</h4>
-              <p>
-                I wanted to build a robotic platform that could maintain dynamic
-                balance on uneven surfaces while still responding naturally to
-                gesture-based operator inputs.
-              </p>
+              <p>I wanted to build a robotic platform that could maintain dynamic balance on uneven surfaces while still responding naturally to gesture-based operator inputs.</p>
             </div>
             <div>
               <h4>My Role</h4>
-              <p>
-                I developed the balancing controller, implemented embedded
-                firmware, integrated obstacle sensing, and tuned the real-time
-                gesture interaction workflow.
-              </p>
+              <p>I developed the balancing controller, implemented embedded firmware, integrated obstacle sensing, and tuned the real-time gesture interaction workflow.</p>
             </div>
             <div>
               <h4>Technologies Used</h4>
-              <p>
-                Embedded C, PID control, ultrasonic ranging, real-time
-                classification pipeline.
-              </p>
+              <p>Embedded C, PID control, ultrasonic ranging, real-time classification pipeline.</p>
             </div>
             <div>
               <h4>Design Approach</h4>
-              <p>
-                I tuned a PID loop to stabilize a two-wheel platform under
-                slope-induced disturbances, then layered gesture interpretation
-                and autonomous obstacle checks without compromising control loop
-                stability.
-              </p>
+              <p>I tuned a PID loop to stabilize a two-wheel platform under slope-induced disturbances, then layered gesture interpretation and autonomous obstacle checks without compromising control loop stability.</p>
             </div>
             <div>
               <h4>Key Challenges</h4>
-              <p>
-                The main challenge was preserving reliable balance while
-                introducing asynchronous user commands and sensor-triggered
-                navigation events.
-              </p>
+              <p>The main challenge was preserving reliable balance while introducing asynchronous user commands and sensor-triggered navigation events.</p>
             </div>
             <div>
               <h4>Results / Impact</h4>
-              <p>
-                The robot remained stable on slopes up to 30 degrees, achieved
-                obstacle handling at 20 cm range, and reached 92% gesture
-                classification accuracy with sub-150 ms average inference
-                latency.
-              </p>
+              <p>The robot remained stable on slopes up to 30 degrees, achieved obstacle handling at 20 cm range, and reached 92% gesture classification accuracy with sub-150 ms average inference latency.</p>
             </div>
+          </div>
+
+          <!-- Robot project images -->
+          <div class="project-images">
+            <figure class="project-img-wrap">
+              <img src="robot-pid-graph.jpg" alt="PID controller tuning graph for self-balancing robot" loading="lazy" />
+              <figcaption>PID tuning — tilt angle vs. time showing convergence under disturbance</figcaption>
+            </figure>
+            <figure class="project-img-wrap">
+              <img src="robot-photo.jpg" alt="Self-balancing robot hardware" loading="lazy" />
+              <figcaption>Two-wheeled robot platform with ultrasonic sensor and embedded controller</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -223,48 +185,27 @@
           <div class="project-grid">
             <div>
               <h4>Problem / Goal</h4>
-              <p>
-                Software-only DNN inference on embedded hardware had insufficient
-                throughput, so I designed a hardware-oriented accelerator path
-                to improve runtime performance.
-              </p>
+              <p>Software-only DNN inference on embedded hardware had insufficient throughput, so I designed a hardware-oriented accelerator path to improve runtime performance.</p>
             </div>
             <div>
               <h4>My Role</h4>
-              <p>
-                I designed the accelerator architecture and optimized arithmetic
-                precision for reliable fixed-point execution.
-              </p>
+              <p>I designed the accelerator architecture and optimized arithmetic precision for reliable fixed-point execution.</p>
             </div>
             <div>
               <h4>Technologies Used</h4>
-              <p>
-                NIOS II embedded platform, fixed-point Q16.16 arithmetic,
-                hardware-software co-design principles.
-              </p>
+              <p>NIOS II embedded platform, fixed-point Q16.16 arithmetic, hardware-software co-design principles.</p>
             </div>
             <div>
               <h4>Design Approach</h4>
-              <p>
-                I replaced floating-point-heavy operations with Q16.16 numeric
-                pipelines and tuned truncation behavior to preserve inference
-                fidelity through matrix-vector workloads.
-              </p>
+              <p>I replaced floating-point-heavy operations with Q16.16 numeric pipelines and tuned truncation behavior to preserve inference fidelity through matrix-vector workloads.</p>
             </div>
             <div>
               <h4>Key Challenges</h4>
-              <p>
-                Fixed-point arithmetic can quickly introduce cumulative error. I
-                focused on maintaining stable numerical behavior while maximizing
-                throughput gains.
-              </p>
+              <p>Fixed-point arithmetic can quickly introduce cumulative error. I focused on maintaining stable numerical behavior while maximizing throughput gains.</p>
             </div>
             <div>
               <h4>Results / Impact</h4>
-              <p>
-                The design achieved a 5x speedup compared with software-only
-                implementations while retaining accurate inference behavior.
-              </p>
+              <p>The design achieved a 5x speedup compared with software-only implementations while retaining accurate inference behavior.</p>
             </div>
           </div>
         </article>
@@ -274,45 +215,27 @@
           <div class="project-grid">
             <div>
               <h4>Problem / Goal</h4>
-              <p>
-                I built a synthesizable single-cycle processor subsystem that
-                could execute core ALU instructions with deterministic control.
-              </p>
+              <p>I built a synthesizable single-cycle processor subsystem that could execute core ALU instructions with deterministic control.</p>
             </div>
             <div>
               <h4>My Role</h4>
-              <p>
-                I implemented the RTL controller and datapath control logic, and
-                I created a full testbench suite for verification.
-              </p>
+              <p>I implemented the RTL controller and datapath control logic, and I created a full testbench suite for verification.</p>
             </div>
             <div>
               <h4>Technologies Used</h4>
-              <p>
-                SystemVerilog, Intel Quartus Prime, ModelSim.
-              </p>
+              <p>SystemVerilog, Intel Quartus Prime, ModelSim.</p>
             </div>
             <div>
               <h4>Design Approach</h4>
-              <p>
-                I designed a 52-state control FSM to sequence datapath inputs
-                for four ALU instructions, then validated state transitions and
-                outputs using targeted simulation scenarios.
-              </p>
+              <p>I designed a 52-state control FSM to sequence datapath inputs for four ALU instructions, then validated state transitions and outputs using targeted simulation scenarios.</p>
             </div>
             <div>
               <h4>Key Challenges</h4>
-              <p>
-                I needed robust edge-case handling across control transitions and
-                opcode conditions to avoid silent functional mismatches.
-              </p>
+              <p>I needed robust edge-case handling across control transitions and opcode conditions to avoid silent functional mismatches.</p>
             </div>
             <div>
               <h4>Results / Impact</h4>
-              <p>
-                I produced 30+ edge and corner-case tests and achieved 95%
-                functional reliability in simulation.
-              </p>
+              <p>I produced 30+ edge and corner-case tests and achieved 95% functional reliability in simulation.</p>
             </div>
           </div>
         </article>
@@ -322,47 +245,27 @@
           <div class="project-grid">
             <div>
               <h4>Problem / Goal</h4>
-              <p>
-                I designed a hardware ARC4 decryption engine for embedded
-                systems where data throughput and efficient communication
-                protocols were critical.
-              </p>
+              <p>I designed a hardware ARC4 decryption engine for embedded systems where data throughput and efficient communication protocols were critical.</p>
             </div>
             <div>
               <h4>My Role</h4>
-              <p>
-                I implemented the baseline decryption architecture and then
-                extended it with parallel processing support.
-              </p>
+              <p>I implemented the baseline decryption architecture and then extended it with parallel processing support.</p>
             </div>
             <div>
               <h4>Technologies Used</h4>
-              <p>
-                On-chip memory design, digital logic, ready-enable microprotocol
-                communication.
-              </p>
+              <p>On-chip memory design, digital logic, ready-enable microprotocol communication.</p>
             </div>
             <div>
               <h4>Design Approach</h4>
-              <p>
-                I built a synchronized decryption pipeline with clear
-                handshaking behavior, then architected a parallel extension to
-                reduce processing bottlenecks.
-              </p>
+              <p>I built a synchronized decryption pipeline with clear handshaking behavior, then architected a parallel extension to reduce processing bottlenecks.</p>
             </div>
             <div>
               <h4>Key Challenges</h4>
-              <p>
-                The challenge was scaling throughput without breaking timing and
-                data integrity guarantees across communication boundaries.
-              </p>
+              <p>The challenge was scaling throughput without breaking timing and data integrity guarantees across communication boundaries.</p>
             </div>
             <div>
               <h4>Results / Impact</h4>
-              <p>
-                The parallelized design improved key-cracking/decryption
-                throughput by 50% relative to a single-unit implementation.
-              </p>
+              <p>The parallelized design improved key-cracking/decryption throughput by 50% relative to a single-unit implementation.</p>
             </div>
           </div>
         </article>
@@ -374,81 +277,81 @@
 
           <article class="experience-card">
             <header>
-              <h3>Electrical Engineering Intern - NorthRiver Midstream</h3>
-              <p class="meta">Taylor, BC | May 2025 - August 2025</p>
+              <h3>Electrical Engineering Co-op — Lauren Services</h3>
+              <p class="meta">Vancouver, BC | September 2025 – Present</p>
             </header>
             <p>
-              I developed more than ten engineering work packages for electrical
-              equipment maintenance and replacement in a gas processing context.
-              This required translating field realities into practical, safe, and
-              execution-ready engineering documentation.
+              I develop engineering work packages for electrical, instrumentation, and controls systems, including DCS integrations, PLC configurations, and field device connectivity in industrial energy projects.
             </p>
             <p>
-              I performed power system simulations to verify equipment sizing and
-              load allocation under operational scenarios, reaching 95% modeling
-              accuracy. I also scoped MCC and motor control assets across five
-              plant zones and annotated single-line diagrams to support planning,
-              design review, and downstream implementation.
+              I conduct simulations and validation for variable frequency drive (VFD) installations, ensuring compliance, optimal motor performance, and operational reliability.
             </p>
           </article>
 
           <article class="experience-card">
             <header>
-              <h3>Undergraduate Research Assistant - QDG Physics Lab</h3>
-              <p class="meta">Vancouver, BC | January 2025 - April 2025</p>
+              <h3>Electrical Engineering Intern — NorthRiver Midstream</h3>
+              <p class="meta">Taylor, BC | May 2025 – August 2025</p>
             </header>
             <p>
-              I prototyped an 18-channel low-cost logic analyzer for QDGBus
-              drivers using a Raspberry Pi Pico W, with reliable capture of PWM
-              signals in the 3.22-7.82 kHz range.
+              I spearheaded the development of 10+ engineering work packages for maintenance and replacement of gas plant electrical equipment, translating field realities into practical, safe, and execution-ready documentation.
             </p>
             <p>
-              I analyzed over 500 signal samples in Python and cross-validated
-              results with oscilloscope readings to isolate timing inconsistency
-              and electrical noise artifacts. To support stable deployment, I
-              designed a custom 2-layer KiCad PCB with integrated level shifters
-              and external regulation, achieving full system compatibility.
+              I conducted power system simulations to validate equipment sizing and load distribution with 95% accuracy, and scoped MCC and motor control assets across five plant zones with annotated single-line diagrams.
             </p>
           </article>
 
           <article class="experience-card">
             <header>
-              <h3>Satellite Design Team Lead - UBC Orbit</h3>
-              <p class="meta">Vancouver, BC | September 2023 - Present</p>
+              <h3>Undergraduate Research Assistant — QDG Physics Lab, UBC</h3>
+              <p class="meta">Vancouver, BC | January 2025 – April 2025</p>
             </header>
             <p>
-              I initiated and currently lead development of an Electrical Power
-              System emulator that models voltage buses, thermal behavior, RBF
-              switching logic, and fault detection to emulate mission-like power
-              conditions before integration.
+              I developed Python test suites to verify 32-bit control instructions sent to laser driver computers, ensuring bit-level accuracy for amplitude, phase, and timing parameters. I also implemented automated validation scripts to detect and resolve discrepancies in instruction formatting and transmission, enabling precise real-time laser control in quantum experiments.
             </p>
             <p>
-              I implemented a low-earth-orbit simulation model that reflects
-              sun/eclipse cycling and battery degradation effects, improving EPS
-              predictive behavior by 60%. I also ran multi-phase programmable
-              light tests and coordinated cross-functional integration validation
-              with subsystem teams.
+              I prototyped an 18-channel logic analyzer using a Raspberry Pi Pico W and designed a custom 2-layer KiCad PCB with integrated level shifters and power regulation, achieving reliable PWM signal capture in the 3.22–7.82 kHz range. I cross-validated over 500 signal samples against oscilloscope readings to isolate timing inconsistency and electrical noise artifacts.
             </p>
           </article>
+
+          <article class="experience-card">
+            <header>
+              <h3>Satellite Design Team Lead — UBC Orbit</h3>
+              <p class="meta">Vancouver, BC | September 2023 – January 2026</p>
+            </header>
+            <p>
+              I initiated and led development of a full-featured Electrical Power System (EPS) emulator modeling voltage buses, thermal behavior, RBF switching logic, and fault detection to simulate mission-like power conditions ahead of hardware integration.
+            </p>
+            <p>
+              I programmed a low-earth-orbit simulation model reflecting sun/eclipse cycling and battery degradation effects, increasing EPS predictive accuracy by 60% under mission-like conditions. I also ran multi-phase programmable light tests and coordinated cross-functional integration validation with subsystem teams.
+            </p>
+
+            <!-- EPS emulator images -->
+            <div class="project-images">
+              <figure class="project-img-wrap">
+                <img src="eps-solar-emulator.jpg" alt="EPS solar emulator hardware setup" loading="lazy" />
+                <figcaption>Solar emulator setup used for multi-phase light testing of the EPS</figcaption>
+              </figure>
+              <figure class="project-img-wrap">
+                <img src="eps-orbit-graph.jpg" alt="LEO orbit simulation graph showing sun and eclipse cycles" loading="lazy" />
+                <figcaption>LEO orbit simulation — voltage bus behavior across sun/eclipse cycles</figcaption>
+              </figure>
+            </div>
+          </article>
+
         </div>
       </section>
 
       <section id="education" class="section container">
         <h2>Education</h2>
         <article class="education-card">
-          <h3>University of British Columbia - Vancouver, BC</h3>
-          <p class="meta">BASc in Electrical Engineering, September 2021 - May 2027</p>
+          <h3>University of British Columbia — Vancouver, BC</h3>
+          <p class="meta">BASc in Electrical Engineering (Co-op) | September 2021 – May 2027</p>
           <p>
-            My academic training combines theoretical foundations with project
-            execution across embedded systems, processor design, controls, power
-            analysis, and engineering validation workflows. Through co-op and
-            research work, I apply coursework concepts to real design constraints
-            and measurable engineering outcomes.
+            My academic training combines theoretical foundations with project execution across embedded systems, processor design, controls, power analysis, and engineering validation workflows. Through co-op and research work, I apply coursework concepts to real design constraints and measurable engineering outcomes.
           </p>
           <p>
-            Relevant focus areas include digital systems and computer
-            architecture, embedded control, simulation-driven design, signal
-            characterization, and practical electrical infrastructure analysis.
+            Relevant focus areas include digital systems and computer architecture, embedded control, simulation-driven design, signal characterization, and practical electrical infrastructure analysis.
           </p>
         </article>
       </section>
@@ -457,11 +360,12 @@
         <div class="container">
           <h2>Work I'm Most Proud Of</h2>
           <ul class="achievement-list">
+            <li>At Lauren Services, I developed EWPs covering DCS integrations, PLC configurations, and VFD validation for live industrial energy projects.</li>
             <li>At NorthRiver Midstream, I delivered simulation-backed work packages that helped the team make faster equipment sizing and load-balance decisions while keeping documentation aligned with field conditions.</li>
+            <li>In my research role at the QDG Physics Lab, I built automated Python validation scripts and a custom 18-channel logic analyzer PCB that gave the lab a low-cost, reliable tool for debugging driver signals in quantum experiments.</li>
             <li>While leading power systems work in UBC Orbit, I drove EPS emulator development so subsystem teams could test behavior before hardware integration and reduce uncertainty in system-level validation.</li>
             <li>I built a hardware DNN accelerator on an embedded NIOS II setup to address software bottlenecks and make inference practical for time-constrained applications.</li>
             <li>For the ARC4 design, I introduced a parallel decryption path that improved throughput while preserving protocol timing integrity.</li>
-            <li>In my research role, I developed and validated an 18-channel logic analyzer against oscilloscope measurements, giving the lab a low-cost tool for debugging noisy timing behavior in driver signals.</li>
             <li>With my self-balancing robot project, I combined control stability with real-time interaction to show that responsive gesture input can coexist with robust motion control.</li>
           </ul>
         </div>
@@ -470,11 +374,25 @@
 
     <footer class="footer">
       <div class="container">
-        <p>
-          Thanks for visiting. If you'd like to discuss projects or opportunities, feel free to reach out.
-        </p>
+        <p>Thanks for visiting. If you'd like to discuss projects or opportunities, feel free to reach out.</p>
         <a href="#top" class="back-top">Back to top</a>
       </div>
     </footer>
+
+    <script>
+      // Subtle parallax on background
+      const bg = document.getElementById('parallaxBg');
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const y = window.scrollY;
+            bg.style.transform = `translateY(${y * 0.35}px)`;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    </script>
   </body>
 </html>
